@@ -1,3 +1,15 @@
-.app-body {
-    background-color: red;
+@import 'themes';
+@import '~@nebular/theme/styles/globals';
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+@import '~@nebular/auth/styles/all';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+@include nb-install() {
+    @include nb-theme-global();
+    @include nb-auth-global();
 }
+
+;

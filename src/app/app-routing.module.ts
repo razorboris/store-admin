@@ -2,7 +2,11 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './pages/layout.component';
-import { LoginComponent } from './pages/login/login.component';
+// import { LoginComponent } from './pages/login/login.component';
+
+import {
+    NbLoginComponent
+  } from '@nebular/auth';
 
 const routes: Routes = [
     {
@@ -13,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: 'login',
-        component: LoginComponent
+        component: NbLoginComponent
     }
 ];
 
