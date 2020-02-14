@@ -20,7 +20,6 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    //LoginModule,
     NbAuthModule.forRoot(),
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),

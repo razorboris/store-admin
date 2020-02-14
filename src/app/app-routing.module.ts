@@ -2,7 +2,6 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './pages/layout.component';
-// import { LoginComponent } from './pages/login/login.component';
 
 import {
     NbLoginComponent
@@ -16,8 +15,9 @@ const routes: Routes = [
             .then(m => m.LayoutModule),
     },
     {
-        path: 'login',
-        component: NbLoginComponent
+        path: 'auth',
+        loadChildren: () => import('./auth/auth.module')
+            .then(m => m.NtsAuthModule),
     }
 ];
 
