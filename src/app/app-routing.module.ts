@@ -3,10 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './pages/layout.component';
 
-import {
-    NbLoginComponent
-  } from '@nebular/auth';
-
 const routes: Routes = [
     {
         path: '',

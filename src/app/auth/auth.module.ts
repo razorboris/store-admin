@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { NtsAuthRoutingModule } from './auth-routing.module';
 import { NbAuthModule } from '@nebular/auth';
 import { 
+  NbLayoutModule,
   NbAlertModule,
   NbButtonModule,
   NbCheckboxModule,
@@ -27,6 +28,7 @@ import { NstAuthComponent } from './auth.component';
     NbButtonModule,
     NbCheckboxModule,
     NtsAuthRoutingModule,
+    NbLayoutModule,
 
     NbAuthModule,
   ],

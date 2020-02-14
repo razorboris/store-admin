@@ -9,7 +9,12 @@ import { LayoutModule } from './pages/layout.module';
 
 import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { 
+  NbThemeModule,
+  NbLayoutModule,
+  NbSidebarModule,
+  NbMenuModule
+} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
@@ -23,6 +28,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbAuthModule.forRoot(),
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    NbSidebarModule.forRoot(),
+    NbMenuModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule
   ],
