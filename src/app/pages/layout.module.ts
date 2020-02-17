@@ -8,6 +8,8 @@ import {
 
 import { LayoutComponent } from './layout.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { CategoriesModule } from './catalog/categories/categories.module';
+import { ProductsModule } from './catalog/products/products.module';
 import { PagesRoutingModule } from './page-routing.module';
 
 @NgModule({
@@ -17,6 +19,8 @@ import { PagesRoutingModule } from './page-routing.module';
         NbMenuModule,
 
         DashboardModule,
+        CategoriesModule,
+        ProductsModule,
         RouterModule,
         PagesRoutingModule
     ],
