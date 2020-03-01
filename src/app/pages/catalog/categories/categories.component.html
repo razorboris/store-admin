@@ -1,1 +1,24 @@
-<h1>Categories</h1>
+<nb-layout-header subheader>
+    <div class="d-flex justify-content-between w-100">
+        <h4 class="page-title">Категории</h4>
+        <nb-actions>
+            <nb-action icon="list-outline"></nb-action>
+            <nb-action icon="grid-outline"></nb-action>
+            <nb-action icon="plus-circle-outline"></nb-action>
+        </nb-actions>
+    </div>
+</nb-layout-header>
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let category of Categories">
+                <div class="card">
+                    <img class="card-img-top" src="{{ category.image }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ category.title }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

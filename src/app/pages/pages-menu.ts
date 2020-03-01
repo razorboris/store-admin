@@ -13,6 +13,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/dashboard',
   },
   {
+    title: 'Заказы',
+    icon: 'shopping-cart-outline',
+    link: '/',
+  },
+  {
     title: 'Каталог',
     icon: 'archive-outline',
     // link: '/catalog',
@@ -26,6 +31,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/products'
       }
     ]
+  },
+  {
+    title: 'Продвижение',
+    icon: 'bulb-outline',
+    link: '/promotion'
+  },
+  {
+    title: 'Пользователи',
+    icon: 'people-outline',
+    link: '/'
   },
   // {
   //   title: 'FEATURES',
